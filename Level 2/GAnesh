@@ -1,0 +1,30 @@
+Class Universes{
+
+Observableuniverse(String name, (int?number})
+{
+print("name of planet is $name"); 
+print("number of planets are $number");
+}
+
+planets([String?name, int?number])
+{
+ print("name of galaxy is $name");
+
+print("number of planet $number");
+}
+}
+
+class Universe extends Universes
+{
+
+planet([String? car,String? truck])
+{ 
+print("the car is Scar"); print("the truck is Struck");
+}
+}
+void main()
+{
+Universe().Observableuniverse("mars", number: 2008); Universe().planets();
+
+Universe().planet ("Tesla model S", "tesla semitruck");
+}
